@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>random website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<button id="leftmenubutton">☰</button>
+<header class="image-marquee">
+    <div class="marquee-track"><img src="images/C.webp" alt="C"><img src="images/GNU.webp" alt="GNU"><img src="images/linux.webp" alt="Linux"><img src="images/SCP.webp" alt="SCP"><img src="images/Zig.webp" alt="Zig"><img src="images/C.webp" alt="C"><img src="images/GNU.webp" alt="GNU"><img src="images/linux.webp" alt="Linux"><img src="images/SCP.webp" alt="SCP"><img src="images/Zig.webp" alt="Zig"><img src="images/C.webp" alt="C"><img src="images/GNU.webp" alt="GNU"><img src="images/linux.webp" alt="Linux"><img src="images/SCP.webp" alt="SCP"><img src="images/Zig.webp" alt="Zig"><img src="images/C.webp" alt="C"><img src="images/GNU.webp" alt="GNU"><img src="images/linux.webp" alt="Linux"><img src="images/SCP.webp" alt="SCP"><img src="images/Zig.webp" alt="Zig"><img src="images/C.webp" alt="C"><img src="images/GNU.webp" alt="GNU"><img src="images/linux.webp" alt="Linux"><img src="images/SCP.webp" alt="SCP"><img src="images/Zig.webp" alt="Zig"><img src="images/C.webp" alt="C"><img src="images/GNU.webp" alt="GNU"><img src="images/linux.webp" alt="Linux"><img src="images/SCP.webp" alt="SCP"><img src="images/Zig.webp" alt="Zig"><img src="images/C.webp" alt="C"><img src="images/GNU.webp" alt="GNU"><img src="images/linux.webp" alt="Linux"><img src="images/SCP.webp" alt="SCP"><img src="images/Zig.webp" alt="Zig"><img src="images/C.webp" alt="C"><img src="images/GNU.webp" alt="GNU"><img src="images/linux.webp" alt="Linux"><img src="images/SCP.webp" alt="SCP"><img src="images/Zig.webp" alt="Zig"><img src="images/C.webp" alt="C"><img src="images/GNU.webp" alt="GNU"><img src="images/linux.webp" alt="Linux"><img src="images/SCP.webp" alt="SCP"><img src="images/Zig.webp" alt="Zig"><img src="images/C.webp" alt="C"><img src="images/GNU.webp" alt="GNU"><img src="images/linux.webp" alt="Linux"><img src="images/SCP.webp" alt="SCP"><img src="images/Zig.webp" alt="Zig"><img src="images/C.webp" alt="C"><img src="images/GNU.webp" alt="GNU"><img src="images/linux.webp" alt="Linux"><img src="images/SCP.webp" alt="SCP"><img src="images/Zig.webp" alt="Zig"><img src="images/C.webp" alt="C"><img src="images/GNU.webp" alt="GNU"><img src="images/linux.webp" alt="Linux"><img src="images/SCP.webp" alt="SCP"><img src="images/Zig.webp" alt="Zig"></div>
+    <div class="header-text">Histoire Des Langages de programmation</div>
+</header>
+
+<div id="layout">
+    <div class="leftmenu">
+        <a href="index.html">Page Principale</a><br>
+        <a href="favoris.html">Favoris</a><br>
+        <a href="consignes.html">Consignes</a><br>
+        <a href="sources.html">Sources</a>
+    </div>
+
+<div class="maincontent">
+
+<h1> Langages De Programmation </h1>
+
+<h2>Top 10 langages essentiels et leur histoire:</h2>
+
+<h3>1. Le Code Machine</h3>
+<ul>
+    <li>La base absolue. Tout le reste compile vers ça. Composé de zéros et de uns (ou hexadécimal pour nous).</li>
+    <li>Histoire: utilisé depuis les premiers ordinateurs des années 40, chaque CPU a son propre jeu d’instructions.</li>
+    <li>Exemple x86:</li>
+</ul>
+<div class="code-box">
+<span class="value">0xb0</span> <span class="value">0x1e</span> <span class="value">0xb3</span> <span class="value">0x03</span> <span class="value">0x00</span> <span class="value">0xd8</span>
+</div><br>
+
+<h3>2. Assembly</h3>
+<ul>
+    <li>Traduction lisible du code machine. Permet de contrôler directement le matériel.</li>
+    <li>Histoire: apparu dans les années 50; indispensable pour OS, BIOS, pilotes.</li>
+    <li>Exemple NASM x86-32:</li>
+</ul>
+<div class="code-box">
+<span class="tag">mov</span> <span class="attr">al</span>, <span class="value">30</span><br>
+<span class="tag">mov</span> <span class="attr">bl</span>, <span class="value">3</span><br>
+<span class="tag">add</span> <span class="attr">al</span>, <span class="attr">bl</span><br>
+<span class="tag">call</span> <span class="punct">$-1</span>
+</div><br>
+
+<h3>3. Fortran (1957)</h3>
+<ul>
+    <li>Premier vrai langage haut-niveau pour calcul scientifique et ingénierie.</li>
+    <li>Histoire: utilisé pour des calculs complexes sur des superordinateurs dès 1957.</li>
+    <li>Exemple:</li>
+</ul>
+<div class="code-box">
+       WRITE (6,7)<br>
+     7 FORMAT(13H HELLO, WORLD)<br>
+       STOP<br>
+       END
+</div><br>
+
+<h3>4. C (1972)</h3>
+<ul>
+    <li>Langage système polyvalent. Base des OS modernes, compilateurs et logiciels critiques.</li>
+    <li>Histoire: créé pour réécrire Unix, influence directe sur C++, Objective-C, Rust, Go.</li>
+    <li>Exemple:</li>
+</ul>
+<div class="code-box">
+<span class="punct">#include</span> &lt;<span class="attr">stdio.h</span>&gt;<br>
+<span class="tag">int</span> <span class="attr">main</span>() {<br>
+    &nbsp;&nbsp;printf(<span class="string">"Bonjour, C!\n"</span>);<br>
+    &nbsp;&nbsp;<span class="tag">return</span> 0;<br>
+}
+</div><br>
+
+<h3>5. C++ (1983)</h3>
+<ul>
+    <li>Extension de C avec la programmation orientée objet.</li>
+    <li>Histoire: utilisé pour logiciels complexes, jeux, moteurs graphiques.</li>
+    <li>Exemple:</li>
+</ul>
+<div class="code-box">
+<span class="punct">#include</span> &lt;<span class="attr">iostream</span>&gt;<br>
+<span class="tag">using namespace</span> std;<br>
+<span class="tag">int</span> <span class="attr">main</span>() {<br>
+    &nbsp;&nbsp;cout &lt;&lt; <span class="string">"Bonjour, C++!"</span> &lt;&lt; endl;<br>
+    &nbsp;&nbsp;<span class="tag">return</span> 0;<br>
+}
+</div><br>
+
+<h3>6. Python (1991)</h3>
+<ul>
+    <li>Langage dynamique, simple, très lisible.</li>
+    <li>Histoire: Guido van Rossum le crée pour remplacer ABC; explosera avec scripting, web, IA.</li>
+    <li>Exemple Python 2:</li>
+</ul>
+<div class="code-box">
+name = <span class="tag">raw_input</span>(<span class="string">"Entrez votre nom: "</span>)<br>
+<span class="tag">print</span> <span class="string">"Bonjour,"</span>, name
+</div><br>
+
+<h3>7. Java (1995)</h3>
+<ul>
+    <li>“Write once, run anywhere”; orienté objet et portable.</li>
+    <li>Histoire: inventé par Sun Microsystems, énorme pour entreprise et Android.</li>
+    <li>Exemple:</li>
+</ul>
+<div class="code-box">
+<span class="tag">public class</span> Hello {<br>
+    &nbsp;&nbsp;<span class="tag">public static void</span> main(String[] args) {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;System.out.println(<span class="string">"Bonjour, Java!"</span>);<br>
+    &nbsp;&nbsp;}<br>
+}
+</div><br>
+
+<h3>8. JavaScript (1995)</h3>
+<ul>
+    <li>Langage indispensable du web; Client et Serveurs.</li>
+    <li>Histoire: créé en 10 jours pour Netscape; devient moteur de tout navigateur moderne.</li>
+    <li>Exemple:</li>
+</ul>
+<div class="code-box">
+console.log(<span class="string">"Bonjour, JavaScript!"</span>);
+</div><br>
+
+<h3>9. Rust (2010)</h3>
+<ul>
+    <li>Langage moderne; sécurisé et performant.</li>
+    <li>Histoire: créé par Mozilla pour remplacer C/C++ là où sécurité mémoire et performance comptent.</li>
+    <li>Exemple:</li>
+</ul>
+<div class="code-box">
+fn main() {<br>
+    &nbsp;&nbsp;println!(<span class="string">"Bonjour, Rust!"</span>);<br>
+}
+</div><br>
+
+<h3>10. C# (2000)</h3>
+<ul>
+    <li>Langage par Microsoft, orienté objet, utilisé pour applications desktop, web, et jeux (Unity Principalement).</li>
+    <li>Histoire: conçu pour rivaliser avec Java, rapidement adopté dans l’écosystème Windows.</li>
+    <li>Exemple:</li>
+</ul>
+<div class="code-box">
+using System;<br>
+<span class="tag">class</span> Program {<br>
+    &nbsp;&nbsp;<span class="tag">static void</span> Main() {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine(<span class="string">"Bonjour, C#!"</span>);<br>
+    &nbsp;&nbsp;}<br>
+}
+</div>
+</div>
+</div>
+
+<footer><a href="ecoledirecte.com">Ecole Directe</a><br><img src="https://upload.wikimedia.org/wikipedia/commons/4/43/CC_Zero_badge.svg"></footer>
+
+<script src="main.js"></script>
+</body>
+</html>
