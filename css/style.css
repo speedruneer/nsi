@@ -249,6 +249,10 @@ li:hover {
 
 .whitebg {
     background: white;
-    border-radius: 100px;
+    border-radius: 200px;
     border: none;
+}
+
+.whitebg:hover {
+    border-radius: 100px;
 }
